@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  base: "/student-pwa/",
   plugins: [
     react(),
     VitePWA({
@@ -13,8 +14,8 @@ export default defineConfig({
       manifest: {
         name: "Student PWA",
         short_name: "Student",
-        start_url: "/",
-        scope: "/",
+        start_url: "/student-pwa/",
+        scope: "/student-pwa/",
         display: "standalone",
         background_color: "#ffffff",
         theme_color: "#317EFB",
